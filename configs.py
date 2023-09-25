@@ -13,7 +13,7 @@ if 'DYNO' in environ:
 else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
-FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN','lazy-gangster-baby-lazydeveloperr.koyeb.app') else APP_NAME+'.herokuapp.com'
+FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN','https://moviecrown-uwgn.onrender.com') else APP_NAME+'.herokuapp.com'
 URL = "https://{}/".format(FQDN) if ON_HEROKU or NO_PORT else \
     "http://{}:{}/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
@@ -30,27 +30,27 @@ else:
     URL = "http://{}/".format(FQDN)
 UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', None))
 BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001987654567")).split())) 
-STREAM_LOGS = environ.get('STREAM_LOGS','-1001895607162')
+STREAM_LOGS = environ.get('STREAM_LOGS','-1001602915070')
 SESSION = environ.get('SESSION','MissRozy')
 CUSTOM_CAPTION = environ.get('CUSTOM_CAPTION')
 
 
 class Config(object):
-	API_ID = int(os.environ.get("API_ID", 13323016))
-	API_HASH = os.environ.get("API_HASH", "13323016")
-	BOT_TOKEN = os.environ.get("BOT_TOKEN","6144687436:AAGShuVn551CQHCWjRkdoBIteGgV0SUWxBo")
-	BOT_USERNAME = os.environ.get("BOT_USERNAME" , "MissRozy_BOT")
-	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", -1001772120203))
-	BOT_OWNER = int(os.environ.get("BOT_OWNER", "5965340120"))
-	DATABASE_URL = os.environ.get("DATABASE_URL","mongodb+srv://lazy:Zabintkhab7808@lazydev786.lpvunl5.mongodb.net/?retryWrites=true&w=majority")
-	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1001765107260")
-	LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1001895607162")
+	API_ID = int(os.environ.get("API_ID", 9840945))
+	API_HASH = os.environ.get("API_HASH", "cda11f5b515a4e629bb4f1c9a69fda3a")
+	BOT_TOKEN = os.environ.get("BOT_TOKEN","6492795615:AAEHMKWJ5RiBTyIQ_QFXt63dC6FIpbk054I")
+	BOT_USERNAME = os.environ.get("BOT_USERNAME" , "movieHouse10_bot")
+	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", -1001602915070))
+	BOT_OWNER = int(os.environ.get("BOT_OWNER", "5976189850"))
+	DATABASE_URL = os.environ.get("DATABASE_URL","mongodb+srv://admin:admin@cluster0.tjsvyh6.mongodb.net/?retryWrites=true&w=majority")
+	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1001602915070")
+	LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1001602915070")
 	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
 	FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", True))
 	BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
 	LAZY_CHANNEL = int(os.environ.get('LAZY_CHANNEL','-100'))
 	LAZY_MODE = bool(os.environ.get("LAZY_MODE", False))
-	LAZY_PIC = os.environ.get("LAZY_PIC","https://telegra.ph/file/d382d2fad1fdd2a4ccca4.png")
+	LAZY_PIC = os.environ.get("LAZY_PIC","https://graph.org/file/06f8e19365c7784e858a2.jpg")
 	LP_BTN_MAIN_CH_USRNM = os.environ.get("LP_BTN_MAIN_CH_USRNM")
 	LP_CHANNEL_USRNM = os.environ.get("LP_CHANNEL_USRNM")
 	LPCH_ADMIN_USRMN = os.environ.get("LPCH_ADMIN_USRMN")
@@ -72,14 +72,14 @@ class Config(object):
 
 📡 **ʜᴏꜱᴛᴇᴅ ᴏɴ:** [koyeb](https://app.koyeb.com)
 
-🧑🏻‍💻 **DΞVΞLФPΞЯ:** [L͢a͢z͢y͢D͢e͢v͢e͢l͢o͢p͢e͢r͢r](https://t.me/LazyDeveloperr)
+🧑🏻‍💻 **DΞVΞLФPΞЯ:** [MovieCrown](https://t.me/moviecrownofficial)
 
-👥 **šupp⊕r† gr⊕up:** [LazY-SupP⊕ЯΓ](https://t.me/LazyDeveloperSupport)
+👥 **šupp⊕r† gr⊕up:** [Movie-SupP⊕ЯΓ](https://t.me/moviecrownofficial)
 
-📢 **U͢p͢d͢a͢t͢e͢s͢ C͢h͢a͢n͢n͢e͢l͢:** [L͢a͢z͢y͢D͢e͢v͢e͢l͢o͢p͢e͢r͢](https://t.me/LazyDeveloper)
+📢 **U͢p͢d͢a͢t͢e͢s͢ C͢h͢a͢n͢n͢e͢l͢:** [MovieCrown](https://t.me/moviecrownofficial)
 """
 	ABOUT_DEV_TEXT = f"""
-🧑🏻‍💻 <a href='https://t.me/LazyDeveloperr'>**ミ★- L͢a͢z͢y͢D͢e͢v͢e͢l͢o͢p͢e͢r͢ -★彡** </a>
+🧑🏻‍💻 <a href='https://t.me/moviecrownofficial'>**ミ★- MovieCrown -★彡** </a>
 
 <a href=''https://t.me/LazyDeveloperr>ʟᴀᴢʏᴅᴇᴠᴇʟᴏᴘᴇʀ</a> ɪꜱ ꜱᴜᴘᴇʀ ɴᴏᴏʙ 😎. ᴊᴜꜱᴛ ʟᴇᴀʀɴɪɴɢ ꜰʀᴏᴍ ᴏꜰꜰɪᴄɪᴀʟ ᴅᴏᴄꜱ. ᴘʟᴇᴀꜱᴇ ᴅᴏɴᴀᴛᴇ ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴘᴇʀ ꜰᴏʀ ᴋᴇᴇᴘɪɴɢ ᴛʜᴇ ꜱᴇʀᴠɪᴄᴇ ᴀʟɪᴠᴇ.
 ᴀʟꜱᴏ ʀᴇᴍᴇᴍʙᴇʀ ᴛʜᴀᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ ᴡɪʟʟ ᴅᴇʟᴇᴛᴇ ᴀᴅᴜʟᴛ ᴄᴏɴᴛᴇɴᴛꜱ ꜰʀᴏᴍ ᴅᴀᴛᴀʙᴀꜱᴇ. ꜱᴏ ʙᴇᴛᴛᴇʀ ᴅᴏɴ'ᴛ ꜱᴛᴏʀᴇ ᴛʜᴏꜱᴇ ᴋɪɴᴅ ᴏꜰ ᴛʜɪɴɢꜱ.
